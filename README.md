@@ -3,6 +3,7 @@
 A production-grade, containerized MLOps pipeline designed for automated data ingestion, scalable feature engineering, and real-time inference. This project bridges the gap between high-complexity datasets and production-ready AI solutions, showcasing expertise in end-to-end system architecture.
 
 ## 🏗️ System Architecture
+```mermaid
 graph LR
     A[PostgreSQL Database] -->|Data Ingestion| B(Automated ETL Pipeline)
     subgraph Pipeline
@@ -14,10 +15,10 @@ graph LR
     F --> G[Docker Container]
     G --> H[FastAPI Endpoint]
     H --> I[User Requests]
-    
     style A fill:#f9f9f9,stroke:#333
     style G fill:#007acc,color:#fff
     style H fill:#ffcc00,stroke:#333
+```
 
 
 ## 🎯 Business Value & Impact
