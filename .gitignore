@@ -1,0 +1,25 @@
+# --- Secrets/Environment ---
+.env
+*.pem
+
+# --- Python/Build Artifacts ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# --- DVC and Data ---
+.dvc/
+.dvcignore
+data/
+# Only keep .dvc files, ignore the actual large data files
+!*.dvc 
+
+# --- Models ---
+*.pkl
+mlruns/
+
+# --- IDE/OS specific ---
+.vscode/
+.DS_Store
