@@ -9,15 +9,21 @@ graph LR
     subgraph Pipeline
     B --> C{DVC Versioning}
     C --> D[Feature Engineering]
-    D --> E[MLflow Tracking & Registry]
+    D --> E[MLflow Tracking]
     end
     E --> F[Model Deployment]
     F --> G[Docker Container]
     G --> H[FastAPI Endpoint]
     H --> I[User Requests]
-    style A fill:#f9f9f9,stroke:#333
-    style G fill:#007acc,color:#fff
-    style H fill:#ffcc00,stroke:#333
+    
+    style A fill:#f8f9fa,stroke:#adb5bd,stroke-width:1px
+    style B fill:#f1f3f5,stroke:#adb5bd,stroke-width:1px
+    style C fill:#f1f3f5,stroke:#adb5bd,stroke-width:1px
+    style D fill:#f1f3f5,stroke:#adb5bd,stroke-width:1px
+    style E fill:#f1f3f5,stroke:#adb5bd,stroke-width:1px
+    style F fill:#e9ecef,stroke:#495057,stroke-width:2px
+    style G fill:#5c7cfa,stroke:#364fc7,stroke-width:1px,color:#fff
+    style H fill:#63e6be,stroke:#20c997,stroke-width:1px,color:#343a40
 ```
 
 
@@ -28,7 +34,7 @@ This service demonstrates a robust pipeline designed to:
 * **Streamline Operations:** Utilizes **MLflow** for experiment tracking and lifecycle management, ensuring models are auditable and reproducible.
 * **Automate Quality Assurance:** Employs **GitHub Actions CI/CD** and **PyTest** to maintain high code reliability and rapid deployment cycles.
 
-🛠 Engineering Philosophy
+## 🛠 Engineering Philosophy
 This project reflects a commitment to business-aligned KPIs and rigorous system architecture, consistent with a background in Bioinformatics and Machine Learning Engineering. It is built to be hardware-agnostic, scalable, and fully auditable.
 
 ## ⚙️ Technical Specs
